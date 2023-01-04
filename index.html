@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Smythe&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <img src="images/header.png">
+        <div class="container">
+            <div id="menu-list-div">
+                <div class="menu-item-div">
+                    <img src="images/beer.svg">
+                    <div class="item-description-div">
+                        <h3>Beer</h3>
+                        <p>good beer as fuck</p>
+                        <h4>$600</h4>
+                    </div>
+                    <button class="button-add-item clickable">+</button>
+                </div>
+                <div class="menu-item-div">
+                    <img src="images/beer.svg">
+                    <div class="item-description-div">
+                        <h3>Beer</h3>
+                        <p>good beer as fuck</p>
+                        <h4>$600</h4>
+                    </div>
+                    <button class="button-add-item clickable">+</button>
+                </div>
+            </div>
+
+            <div id="order-div">
+                <h3>Your order</h3>
+                <div id="ordered-items-list-div">
+                    <div class="ordered-item-div">
+                        <h3>Beer</h3>
+                        <a class="clickable">remove</a>
+                        <h4>$15</h4>
+                    </div>
+                    <div class="ordered-item-div">
+                        <h3>Beer</h3>
+                        <a class="clickable">remove</a>
+                        <h4>$15</h4>
+                    </div>
+                </div>
+                <div class="total-price-div ordered-item-div">
+                    <h3>Total price:</h3>
+                    <h4 id="total-price">$15</h4>
+                </div>
+                <button id="button-order" class="button-order clickable">Complete order</button>
+            </div>
+
+            <div id="thanks-div">
+                <h1>Thanks, James! Your order is on its way!</h1>
+            </div>
+
+        </div>
+
+        <div id="pay-modal">
+            <h1>Enter card details</h1>
+            <form>
+                <input required type="text" name="name" id="name" placeholder="Enter your name">
+                <input required type="text" name="card-number" id="card-number" placeholder="Enter card number">
+                <input required type="text" name="cvv" id="cvv" placeholder="Enter CVV">
+                <input type="submit" id="button-pay" value="Pay">
+            </form>
+        </div>
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+
